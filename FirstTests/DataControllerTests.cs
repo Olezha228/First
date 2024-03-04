@@ -31,7 +31,7 @@ namespace FirstTests
             // Act
             var result = _controller.Get();
 
-            //Assert
+            // Assert
             var okResult = Assert.IsType<OkObjectResult>(result); 
 
             Assert.Equal("{ Name = John, Age = 30 }", okResult.Value.ToString());
